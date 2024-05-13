@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOW-MODAL</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--- STYLE --->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <button class="btn show-btn" id="show-btn">Show Modal</button>
+      <!-- MODAL -->
+      <div class="modal hidden" id="modal">
+        <!-- MODAL HEADER -->
+        <div class="modal-header">
+          <h3>I love SEA 🐳</h3>
+          <button class="btn close-btn" id="close-btn">
+            <i class="fas fa-close"></i>
+          </button>
+        </div>
+        <!-- MODAL BODY -->
+        <div class="modal-body">
+          <h2 class="modal-title">Modal Title</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            nam aliquid, minus necessitatibus harum reprehenderit esse mollitia
+            provident animi maxime sit, tenetur tempora voluptate debitis,
+            repudiandae perspiciatis voluptatibus alias rem omnis cumque! Soluta
+            nemo asperiores sequi maxime dolor tempore! Error harum quidem earum
+            velit optio omnis exercitationem quaerat ipsum quod?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay hidden" id="overlay"></div>
+    <!-- JS -->
+    <script src="app.js"></script>
+  </body>
+</html>
